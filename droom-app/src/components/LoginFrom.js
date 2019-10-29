@@ -45,7 +45,7 @@ const FormikLoginForm = withFormik({
     handleSubmit(values) {
         console.log(values);
         
-        axios.get('https://droom-pt-bw.herokuapp.com/companies/:user_id')
+        axios.get('https://droomapi.herokuapp.com/api/sample/postings')
             .then(response => {
                 console.log(response.data);
             })
